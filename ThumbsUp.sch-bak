@@ -1680,24 +1680,24 @@ $EndComp
 $Comp
 L Connector:Conn_01x04_Female JF17
 U 1 1 622DE716
-P 9550 2300
-F 0 "JF17" V 9396 2448 50  0000 L CNN
-F 1 "Raiser_Female" V 9487 2448 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 9550 2300 50  0001 C CNN
-F 3 "~" H 9550 2300 50  0001 C CNN
-	1    9550 2300
-	0    1    1    0   
+P 9550 2450
+F 0 "JF17" V 9396 2598 50  0000 L CNN
+F 1 "Raiser_Female" V 9487 2598 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 9550 2450 50  0001 C CNN
+F 3 "~" H 9550 2450 50  0001 C CNN
+	1    9550 2450
+	0    1    -1   0   
 $EndComp
 $Comp
 L Connector:Conn_01x04_Male JM17
 U 1 1 622DE720
-P 9550 2450
-F 0 "JM17" V 9612 2594 50  0000 L CNN
-F 1 "Raiser_Male" V 9703 2594 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 9550 2450 50  0001 C CNN
-F 3 "~" H 9550 2450 50  0001 C CNN
-	1    9550 2450
-	0    1    1    0   
+P 9550 2300
+F 0 "JM17" V 9612 2444 50  0000 L CNN
+F 1 "Raiser_Male" V 9703 2444 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 9550 2300 50  0001 C CNN
+F 3 "~" H 9550 2300 50  0001 C CNN
+	1    9550 2300
+	0    1    -1   0   
 $EndComp
 Wire Wire Line
 	16850 6350 16850 6700
@@ -1845,8 +1845,6 @@ F 3 "" H 10000 2750 50  0001 C CNN
 	1    10000 2750
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	9650 2650 10000 2650
 Wire Wire Line
 	9350 2650 9150 2650
 $Comp
@@ -3186,4 +3184,6 @@ F 3 "" H 4850 10850 50  0001 C CNN
 	1    4850 10850
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	9650 2650 10000 2650
 $EndSCHEMATC

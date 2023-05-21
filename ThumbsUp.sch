@@ -1609,7 +1609,7 @@ F 1 "Raiser_Female" V 1887 11198 50  0001 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 1950 11050 50  0001 C CNN
 F 3 "~" H 1950 11050 50  0001 C CNN
 	1    1950 11050
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 $Comp
 L Connector:Conn_01x04_Male JM11
@@ -1620,7 +1620,7 @@ F 1 "Raiser_Male" V 2103 11344 50  0001 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 1950 11200 50  0001 C CNN
 F 3 "~" H 1950 11200 50  0001 C CNN
 	1    1950 11200
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 $Comp
 L Connector:Conn_01x04_Male JM9
@@ -3068,17 +3068,6 @@ F 3 "~" H 3400 11050 50  0001 C CNN
 	1    3400 11050
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	1800 10850 1850 10850
-Connection ~ 1850 10850
-Wire Wire Line
-	1850 10850 1950 10850
-Connection ~ 1950 10850
-Wire Wire Line
-	1950 10850 2050 10850
-Connection ~ 2050 10850
-Wire Wire Line
-	2050 10850 2550 10850
 Connection ~ 2550 10850
 Wire Wire Line
 	2550 10850 2650 10850
@@ -3115,17 +3104,6 @@ Wire Wire Line
 Connection ~ 4200 10850
 Wire Wire Line
 	4200 10850 4850 10850
-Wire Wire Line
-	1750 11400 1850 11400
-Connection ~ 1850 11400
-Wire Wire Line
-	1850 11400 1950 11400
-Connection ~ 1950 11400
-Wire Wire Line
-	1950 11400 2050 11400
-Connection ~ 2050 11400
-Wire Wire Line
-	2050 11400 2550 11400
 Connection ~ 2550 11400
 Wire Wire Line
 	2550 11400 2650 11400
@@ -3186,4 +3164,22 @@ F 3 "" H 4850 10850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9650 2650 10000 2650
+Wire Wire Line
+	2150 10850 2550 10850
+Wire Wire Line
+	1950 10850 2050 10850
+Connection ~ 2150 10850
+Connection ~ 2050 10850
+Wire Wire Line
+	2050 10850 2150 10850
+NoConn ~ 1850 10850
+Wire Wire Line
+	2150 11400 2550 11400
+Wire Wire Line
+	2150 11400 2050 11400
+Connection ~ 2150 11400
+Connection ~ 2050 11400
+Wire Wire Line
+	2050 11400 1950 11400
+NoConn ~ 1850 11400
 $EndSCHEMATC
