@@ -3172,5 +3172,33 @@ COL4
 Wire Wire Line
 	2150 11400 3200 11400
 Wire Wire Line
-	2150 10850 3200 10850
+	2150 10850 2400 10850
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 6471D2FA
+P 2400 10750
+F 0 "H1" H 2500 10799 50  0000 L CNN
+F 1 "MountingHole_Pad" H 2500 10708 50  0000 L CNN
+F 2 "MountingHole:MountingHole_6mm_Pad_Via" H 2400 10750 50  0001 C CNN
+F 3 "~" H 2400 10750 50  0001 C CNN
+	1    2400 10750
+	1    0    0    -1  
+$EndComp
+Connection ~ 2400 10850
+Wire Wire Line
+	2400 10850 2850 10850
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 6471E1B6
+P 2850 10750
+F 0 "H2" H 2950 10799 50  0000 L CNN
+F 1 "MountingHole_Pad" H 2950 10708 50  0000 L CNN
+F 2 "MountingHole:MountingHole_8.4mm_M8_Pad_Via" H 2850 10750 50  0001 C CNN
+F 3 "~" H 2850 10750 50  0001 C CNN
+	1    2850 10750
+	1    0    0    -1  
+$EndComp
+Connection ~ 2850 10850
+Wire Wire Line
+	2850 10850 3200 10850
 $EndSCHEMATC
