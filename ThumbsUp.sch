@@ -1652,28 +1652,6 @@ F 3 "~" H 2600 12400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Conn_01x04_Female JF15
-U 1 1 6225ECEC
-P 2750 11050
-F 0 "JF15" V 2596 11198 50  0000 L CNN
-F 1 "Raiser_Female" V 2687 11198 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 2750 11050 50  0001 C CNN
-F 3 "~" H 2750 11050 50  0001 C CNN
-	1    2750 11050
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:Conn_01x04_Male JM15
-U 1 1 6225ECF6
-P 2750 11200
-F 0 "JM15" V 2812 11344 50  0000 L CNN
-F 1 "Raiser_Male" V 2903 11344 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 2750 11200 50  0001 C CNN
-F 3 "~" H 2750 11200 50  0001 C CNN
-	1    2750 11200
-	0    1    1    0   
-$EndComp
-$Comp
 L Connector:Conn_01x04_Female JF17
 U 1 1 622DE716
 P 9550 2450
@@ -2058,19 +2036,19 @@ Text GLabel 1850 2650 0    50   Input ~ 0
 SDA
 Text GLabel 1850 2750 0    50   Input ~ 0
 SCL
-Text GLabel 2900 2250 0    50   Input ~ 0
-COL0
-Text GLabel 2900 2350 0    50   Input ~ 0
-COL1
-Text GLabel 2900 2850 0    50   Input ~ 0
-COL2
 Text GLabel 2900 2950 0    50   Input ~ 0
+COL0
+Text GLabel 2900 2850 0    50   Input ~ 0
+COL1
+Text GLabel 2900 2350 0    50   Input ~ 0
+COL2
+Text GLabel 2900 2250 0    50   Input ~ 0
 COL3
 Text GLabel 2900 3050 0    50   Input ~ 0
 COL5
-Text GLabel 2900 3150 0    50   Input ~ 0
-ROWL0
 Text GLabel 2900 3250 0    50   Input ~ 0
+ROWL0
+Text GLabel 2900 3150 0    50   Input ~ 0
 ROWL1
 Text GLabel 2900 3350 0    50   Input ~ 0
 ROWL2
@@ -2087,10 +2065,6 @@ F 3 "" H 3700 1950 60  0000 C CNN
 $EndComp
 Text GLabel 4300 3050 2    50   Input ~ 0
 ROWR2
-Text GLabel 4300 2950 2    50   Input ~ 0
-ROWR1
-Text GLabel 4300 2850 2    50   Input ~ 0
-ROWR0
 Text GLabel 4300 2750 2    50   Input ~ 0
 ROWL4
 Text GLabel 4300 2650 2    50   Input ~ 0
@@ -2119,28 +2093,17 @@ F 3 "" H 4700 2350 50  0001 C CNN
 $EndComp
 Text GLabel 4300 2450 2    50   Input ~ 0
 RST
-$Comp
-L Switch:SW_Push SW1
-U 1 1 63887BED
-P 2250 1300
-F 0 "SW1" H 2250 1585 50  0000 C CNN
-F 1 "SW_Push" H 2250 1494 50  0000 C CNN
-F 2 "random-keyboard-parts:SKQG-1155865" H 2250 1500 50  0001 C CNN
-F 3 "~" H 2250 1500 50  0001 C CNN
-	1    2250 1300
-	1    0    0    -1  
-$EndComp
-Text GLabel 2050 1300 0    50   Input ~ 0
+Text GLabel 2100 1100 0    50   Input ~ 0
 RST
 $Comp
 L power:GND #PWR0104
 U 1 1 6388A683
-P 2450 1300
-F 0 "#PWR0104" H 2450 1050 50  0001 C CNN
-F 1 "GND" H 2455 1127 50  0000 C CNN
-F 2 "" H 2450 1300 50  0001 C CNN
-F 3 "" H 2450 1300 50  0001 C CNN
-	1    2450 1300
+P 2350 1450
+F 0 "#PWR0104" H 2350 1200 50  0001 C CNN
+F 1 "GND" H 2355 1277 50  0000 C CNN
+F 2 "" H 2350 1450 50  0001 C CNN
+F 3 "" H 2350 1450 50  0001 C CNN
+	1    2350 1450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -2898,9 +2861,9 @@ F 3 "~" V 9400 9300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text GLabel 10500 9050 1    50   Input ~ 0
-ROWL0
+ROWR4
 Text GLabel 10500 8400 1    50   Input ~ 0
-ROWL0
+ROWR3
 Wire Wire Line
 	9400 9400 9400 11400
 Wire Wire Line
@@ -2981,8 +2944,6 @@ Wire Wire Line
 	4300 2350 4700 2350
 Text GLabel 4300 3250 2    50   Input ~ 0
 ROWR4
-Text GLabel 4300 3350 2    50   Input ~ 0
-ROWR5
 Text GLabel 4300 3150 2    50   Input ~ 0
 ROWR3
 $Comp
@@ -2996,18 +2957,6 @@ F 3 "~" H 3400 11050 50  0001 C CNN
 	1    3400 11050
 	0    1    1    0   
 $EndComp
-Connection ~ 2550 10850
-Wire Wire Line
-	2550 10850 2650 10850
-Connection ~ 2650 10850
-Wire Wire Line
-	2650 10850 2750 10850
-Connection ~ 2750 10850
-Wire Wire Line
-	2750 10850 2850 10850
-Connection ~ 2850 10850
-Wire Wire Line
-	2850 10850 3200 10850
 Connection ~ 3200 10850
 Wire Wire Line
 	3200 10850 3300 10850
@@ -3018,18 +2967,6 @@ Connection ~ 3400 10850
 Wire Wire Line
 	3400 10850 3500 10850
 Connection ~ 3500 10850
-Connection ~ 2550 11400
-Wire Wire Line
-	2550 11400 2650 11400
-Connection ~ 2650 11400
-Wire Wire Line
-	2650 11400 2750 11400
-Connection ~ 2750 11400
-Wire Wire Line
-	2750 11400 2850 11400
-Connection ~ 2850 11400
-Wire Wire Line
-	2850 11400 3200 11400
 Connection ~ 3200 11400
 Wire Wire Line
 	3200 11400 3300 11400
@@ -3054,8 +2991,6 @@ $EndComp
 Wire Wire Line
 	9650 2650 10000 2650
 Wire Wire Line
-	2150 10850 2550 10850
-Wire Wire Line
 	1950 10850 2050 10850
 Connection ~ 2150 10850
 Connection ~ 2050 10850
@@ -3063,14 +2998,11 @@ Wire Wire Line
 	2050 10850 2150 10850
 NoConn ~ 1850 10850
 Wire Wire Line
-	2150 11400 2550 11400
-Wire Wire Line
 	2150 11400 2050 11400
 Connection ~ 2150 11400
 Connection ~ 2050 11400
 Wire Wire Line
 	2050 11400 1950 11400
-NoConn ~ 1850 11400
 $Comp
 L Connector:Conn_01x04_Female JF31
 U 1 1 636DA404
@@ -3135,21 +3067,21 @@ $EndComp
 $Comp
 L Connector:Conn_01x04_Male JM28
 U 1 1 636DA3EC
-P 12900 8700
-F 0 "JM28" H 12700 8650 50  0000 L CNN
-F 1 "Conn_01x04_Male" H 13053 8844 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 12900 8700 50  0001 C CNN
-F 3 "~" H 12900 8700 50  0001 C CNN
-	1    12900 8700
+P 12900 8200
+F 0 "JM28" H 12700 8150 50  0000 L CNN
+F 1 "Conn_01x04_Male" H 13053 8344 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 12900 8200 50  0001 C CNN
+F 3 "~" H 12900 8200 50  0001 C CNN
+	1    12900 8200
 	-1   0    0    1   
 $EndComp
 Text GLabel 4850 10850 2    50   Input ~ 0
 L1GND
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0112
 U 1 1 6569DA14
 P 3200 12100
-F 0 "#PWR?" H 3200 11850 50  0001 C CNN
+F 0 "#PWR0112" H 3200 11850 50  0001 C CNN
 F 1 "GND" H 3205 11927 50  0000 C CNN
 F 2 "" H 3200 12100 50  0001 C CNN
 F 3 "" H 3200 12100 50  0001 C CNN
@@ -3184,4 +3116,61 @@ Wire Wire Line
 Connection ~ 2700 12600
 Wire Wire Line
 	2700 12600 3200 12600
+$Comp
+L BUTT-4:BUTT-4 S1
+U 1 1 646FD412
+P 2700 1100
+F 0 "S1" H 3150 1365 50  0000 C CNN
+F 1 "BUTT-4" H 3150 1274 50  0000 C CNN
+F 2 "BUTT-4:BUTT4" H 3450 1200 50  0001 L CNN
+F 3 "http://site.gravitech.us/Components/BUTT-4/BUTT-4_datasheet.pdf" H 3450 1100 50  0001 L CNN
+F 4 "Tactile Switches MINI PUSH BUTTON SWITCH 4-PIN QTY. 4" H 3450 1000 50  0001 L CNN "Description"
+F 5 "9.5" H 3450 900 50  0001 L CNN "Height"
+F 6 "Gravitech" H 3450 800 50  0001 L CNN "Manufacturer_Name"
+F 7 "BUTT-4" H 3450 700 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "992-BUTT-4" H 3450 600 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Gravitech/BUTT-4?qs=Vxac6xGyzPm51iLpy8GNew%3D%3D" H 3450 500 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 3450 400 50  0001 L CNN "Arrow Part Number"
+F 11 "" H 3450 300 50  0001 L CNN "Arrow Price/Stock"
+	1    2700 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 1100 2550 1100
+Wire Wire Line
+	2700 1200 2350 1200
+Wire Wire Line
+	2350 1200 2350 1450
+Wire Wire Line
+	2700 1300 2550 1300
+Wire Wire Line
+	2550 1300 2550 1100
+Connection ~ 2550 1100
+Wire Wire Line
+	2550 1100 2700 1100
+Wire Wire Line
+	2350 1450 3600 1450
+Wire Wire Line
+	3600 1450 3600 1200
+Connection ~ 2350 1450
+Connection ~ 3600 1200
+Wire Wire Line
+	3600 1200 3600 1100
+Wire Wire Line
+	1850 11400 1500 11400
+Wire Wire Line
+	1500 11400 1500 9450
+Wire Wire Line
+	1500 9450 2650 9450
+Connection ~ 2650 9450
+Text GLabel 4300 2850 2    50   Input ~ 0
+ROWR0
+Text GLabel 4300 2950 2    50   Input ~ 0
+ROWR1
+Text GLabel 4300 3350 2    50   Input ~ 0
+COL4
+Wire Wire Line
+	2150 11400 3200 11400
+Wire Wire Line
+	2150 10850 3200 10850
 $EndSCHEMATC
