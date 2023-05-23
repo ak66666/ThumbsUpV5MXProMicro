@@ -2406,17 +2406,6 @@ $EndComp
 Wire Wire Line
 	10000 10450 9750 10450
 $Comp
-L Connector:Conn_01x04_Female JF5
-U 1 1 62A1D5D4
-P 10100 10100
-F 0 "JF5" V 9946 10248 50  0000 L CNN
-F 1 "Conn_01x04_Female" V 10050 9100 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 10100 10100 50  0001 C CNN
-F 3 "~" H 10100 10100 50  0001 C CNN
-	1    10100 10100
-	0    -1   1    0   
-$EndComp
-$Comp
 L Connector:Conn_01x04_Female JF3
 U 1 1 64B891E7
 P 4850 6600
@@ -2874,34 +2863,8 @@ Connection ~ 10100 9200
 Wire Wire Line
 	9300 9200 8450 9200
 Connection ~ 8450 9200
-Wire Wire Line
-	10000 8750 10300 8750
-Wire Wire Line
-	10300 8750 10300 8150
 Connection ~ 10300 8150
-Wire Wire Line
-	9500 11400 9500 8750
-Wire Wire Line
-	9500 8750 9600 8750
-Wire Wire Line
-	9200 11400 9200 8750
-Wire Wire Line
-	9200 8750 8950 8750
-Wire Wire Line
-	8550 8750 8250 8750
-Wire Wire Line
-	8250 8750 8250 8150
 Connection ~ 8250 8150
-Wire Wire Line
-	8250 9850 6300 9850
-Wire Wire Line
-	6300 9850 6300 9100
-Connection ~ 6300 9100
-Wire Wire Line
-	10300 9900 12000 9900
-Wire Wire Line
-	12000 9900 12000 9100
-Connection ~ 12000 9100
 Wire Wire Line
 	9500 11900 9500 12050
 Wire Wire Line
@@ -3201,4 +3164,35 @@ $EndComp
 Connection ~ 2850 10850
 Wire Wire Line
 	2850 10850 3200 10850
+Wire Wire Line
+	9600 8750 10000 8750
+Wire Wire Line
+	10300 8150 10300 9900
+Wire Wire Line
+	8250 8150 8250 9850
+Wire Wire Line
+	8550 8750 8950 8750
+Wire Wire Line
+	9500 11400 12200 11400
+Wire Wire Line
+	12200 11400 12200 6900
+Connection ~ 12200 6900
+Wire Wire Line
+	9200 11400 6100 11400
+Wire Wire Line
+	6100 11400 6100 6900
+Connection ~ 6100 6900
+Text Notes 8450 12650 0    50   ~ 0
+These are two new thumb keys added in between the halves.
+$Comp
+L Connector:Conn_01x04_Female JF5
+U 1 1 62A1D5D4
+P 10100 10100
+F 0 "JF5" V 9946 10248 50  0000 L CNN
+F 1 "Conn_01x04_Female" V 10050 9100 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 10100 10100 50  0001 C CNN
+F 3 "~" H 10100 10100 50  0001 C CNN
+	1    10100 10100
+	0    -1   1    0   
+$EndComp
 $EndSCHEMATC

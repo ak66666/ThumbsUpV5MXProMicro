@@ -2874,34 +2874,8 @@ Connection ~ 10100 9200
 Wire Wire Line
 	9300 9200 8450 9200
 Connection ~ 8450 9200
-Wire Wire Line
-	10000 8750 10300 8750
-Wire Wire Line
-	10300 8750 10300 8150
 Connection ~ 10300 8150
-Wire Wire Line
-	9500 11400 9500 8750
-Wire Wire Line
-	9500 8750 9600 8750
-Wire Wire Line
-	9200 11400 9200 8750
-Wire Wire Line
-	9200 8750 8950 8750
-Wire Wire Line
-	8550 8750 8250 8750
-Wire Wire Line
-	8250 8750 8250 8150
 Connection ~ 8250 8150
-Wire Wire Line
-	8250 9850 6300 9850
-Wire Wire Line
-	6300 9850 6300 9100
-Connection ~ 6300 9100
-Wire Wire Line
-	10300 9900 12000 9900
-Wire Wire Line
-	12000 9900 12000 9100
-Connection ~ 12000 9100
 Wire Wire Line
 	9500 11900 9500 12050
 Wire Wire Line
@@ -3174,12 +3148,12 @@ Wire Wire Line
 Wire Wire Line
 	2150 10850 2400 10850
 $Comp
-L Mechanical:MountingHole_Pad H?
+L Mechanical:MountingHole_Pad H1
 U 1 1 6471D2FA
 P 2400 10750
-F 0 "H?" H 2500 10799 50  0000 L CNN
+F 0 "H1" H 2500 10799 50  0000 L CNN
 F 1 "MountingHole_Pad" H 2500 10708 50  0000 L CNN
-F 2 "" H 2400 10750 50  0001 C CNN
+F 2 "MountingHole:MountingHole_6mm_Pad_Via" H 2400 10750 50  0001 C CNN
 F 3 "~" H 2400 10750 50  0001 C CNN
 	1    2400 10750
 	1    0    0    -1  
@@ -3188,12 +3162,12 @@ Connection ~ 2400 10850
 Wire Wire Line
 	2400 10850 2850 10850
 $Comp
-L Mechanical:MountingHole_Pad H?
+L Mechanical:MountingHole_Pad H2
 U 1 1 6471E1B6
 P 2850 10750
-F 0 "H?" H 2950 10799 50  0000 L CNN
+F 0 "H2" H 2950 10799 50  0000 L CNN
 F 1 "MountingHole_Pad" H 2950 10708 50  0000 L CNN
-F 2 "" H 2850 10750 50  0001 C CNN
+F 2 "MountingHole:MountingHole_8.4mm_M8_Pad_Via" H 2850 10750 50  0001 C CNN
 F 3 "~" H 2850 10750 50  0001 C CNN
 	1    2850 10750
 	1    0    0    -1  
@@ -3201,4 +3175,24 @@ $EndComp
 Connection ~ 2850 10850
 Wire Wire Line
 	2850 10850 3200 10850
+Wire Wire Line
+	9600 8750 10000 8750
+Wire Wire Line
+	10300 8150 10300 9900
+Wire Wire Line
+	8250 8150 8250 9850
+Wire Wire Line
+	8550 8750 8950 8750
+Wire Wire Line
+	9500 11400 12200 11400
+Wire Wire Line
+	12200 11400 12200 6900
+Connection ~ 12200 6900
+Wire Wire Line
+	9200 11400 6100 11400
+Wire Wire Line
+	6100 11400 6100 6900
+Connection ~ 6100 6900
+Text Notes 8450 12650 0    50   ~ 0
+These are two new thumb keys added in between the halves.
 $EndSCHEMATC
