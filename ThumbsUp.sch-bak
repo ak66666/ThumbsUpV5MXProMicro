@@ -2406,17 +2406,6 @@ $EndComp
 Wire Wire Line
 	10000 10450 9750 10450
 $Comp
-L Connector:Conn_01x04_Female JF5
-U 1 1 62A1D5D4
-P 10100 10100
-F 0 "JF5" V 9946 10248 50  0000 L CNN
-F 1 "Conn_01x04_Female" V 10050 9100 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 10100 10100 50  0001 C CNN
-F 3 "~" H 10100 10100 50  0001 C CNN
-	1    10100 10100
-	0    -1   1    0   
-$EndComp
-$Comp
 L Connector:Conn_01x04_Female JF3
 U 1 1 64B891E7
 P 4850 6600
@@ -3195,4 +3184,15 @@ Wire Wire Line
 Connection ~ 6100 6900
 Text Notes 8450 12650 0    50   ~ 0
 These are two new thumb keys added in between the halves.
+$Comp
+L Connector:Conn_01x04_Female JF5
+U 1 1 62A1D5D4
+P 10100 10100
+F 0 "JF5" V 9946 10248 50  0000 L CNN
+F 1 "Conn_01x04_Female" V 10050 9100 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 10100 10100 50  0001 C CNN
+F 3 "~" H 10100 10100 50  0001 C CNN
+	1    10100 10100
+	0    -1   1    0   
+$EndComp
 $EndSCHEMATC
