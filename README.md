@@ -7,6 +7,7 @@ ProMicro pin-compatible MCUs: Atmega32U4, RP2040, and nice!nano (oritinal and cl
 
 The board uses either Cherry MX-compatible switches in hot-swap sockets, or ALPS/Matias soldered-in switches.
 
+Board needs 3D printed switch plates: https://github.com/ak66666/ThubmsUpSwitchPlates
 
 ![Main view](https://github.com/ak66666/ThumbsUpV5MXProMicro/blob/main/Photos/IMG_20230603_194621492.jpg)
 ![Three levels are visible](https://github.com/ak66666/ThumbsUpV5MXProMicro/blob/main/Photos/IMG_20230603_194629943_HDR.jpg)
