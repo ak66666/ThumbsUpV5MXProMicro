@@ -1,25 +1,21 @@
-# ThumbsUpUnsplitV2
-Multilevel 44 Key Ergonomic Keyboard.
-V2 puts the fourth row one level up.
+# ThumbsUp! v5 ProMicro MX/Alps
 
-The board uses Kailh Choc hot-swap switches.
+Multilevel 58 Key Ergonomic Keyboard.
+3-key Thumb Cluster.
 
-//TODO Pictures to be replaced.
+ProMicro pin-compatible MCUs: Atmega32U4, RP2040, and nice!nano (oritinal and clones) with battery for the bluetooth connectivity.
 
-![Main view](https://github.com/ak66666/ThumbsUpUnsplit/blob/main/Photos-001%20(12)/20220219_191523.jpg)
-![Three levels are visible](https://github.com/ak66666/ThumbsUpUnsplit/blob/main/Photos-001%20(12)/20220219_191651.jpg)
-![](https://github.com/ak66666/ThumbsUpUnsplit/blob/main/Photos-001%20(12)/20220219_152609.jpg)
-![](https://github.com/ak66666/ThumbsUpUnsplit/blob/main/Photos-001%20(12)/20220219_184854.jpg)
-![](https://github.com/ak66666/ThumbsUpUnsplit/blob/main/Photos-001%20(12)/20220219_184909.jpg)
-![](https://github.com/ak66666/ThumbsUpUnsplit/blob/main/Photos-001%20(12)/20220219_191540.jpg)
-![](https://github.com/ak66666/ThumbsUpUnsplit/blob/main/Photos-001%20(12)/20220219_191637.jpg)
+The board uses either Cherry MX-compatible switches in hot-swap sockets, or ALPS/Matias soldered-in switches.
+
+
+![Main view](https://github.com/ak66666/ThumbsUpV5MXProMicro/blob/main/Photos/IMG_20230603_194621492.jpg)
+![Three levels are visible](https://github.com/ak66666/ThumbsUpV5MXProMicro/blob/main/Photos/IMG_20230603_194629943_HDR.jpg)
+
+Other pictures in Photos folder.
 
 # Firmware
-                                                               
-The board uses Planck rev4 software with one pin replaced - it is needed for Cirque trackpad.
-To make it work - modify \qmk_firmware\keyboards\planck\config.h, replace the pin definition with this one:
 
-#define MATRIX_COL_PINS { D7, B4, D6, D4, F7, F6, F5, F4, C7, B0, F0, F1 }
-
+Please refer to this article:
+https://thumbsupkeyboards.blogspot.com/2024/02/source-files-and-default-firmware.html
 
 
